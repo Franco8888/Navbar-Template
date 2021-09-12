@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <style>
-/*   The star means it can be altered*/
+/*   The star or --- comments means it can be altered*/
     
     * {
         margin: 0;
@@ -28,24 +28,85 @@
         height: 100%; /***/
     }
     
-    nav div {
-        gap: 14px;      /***/
+/*    STYLE 1 (NO BUTTON)==============*/
+    
+    /* 
+     nav div {
+        gap: 14px;      ---
         display: flex;
         align-items: center;
     }
     
     nav div a {
-        color: white;           /***/
-        font-size: 22px;        /***/
+        color: white;           ---
+        font-size: 22px;        ---
         font-weight: bold;
         text-decoration: none;
-        
+        position: relative;
+
     }
     
     nav div a:hover {
-        color: aqua;            /***/
+        color: aqua;            ---
     }
     
+    nav div a::before {
+        
+        Change these or cahnge the entire thing
+        height: 5px;
+        border-radius: 3px;
+        background-color: aliceblue;
+        top: -5px;
+        right: 0;
+        width: 0px;
+        transition: all ease-in-out 250ms;
+        
+        
+        content: '';
+        display: block;
+        position: absolute;
+    }
+    
+    nav div a:hover::before {
+        width: 100%;
+    }
+    
+    */
+    
+/*    ============================*/
+    
+/*    STYLE 2 (BUTTON STYLE)==============*/
+    nav div {
+        gap: 10px;      /***/
+        display: flex;
+        align-items: center;
+    }
+    
+    nav div a:link {
+        background-color: chocolate;
+        color: white;           /***/
+        font-size: 22px;        /***/
+        box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.75) inset;    /*Change color*/
+        padding: 8px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+
+    }
+    
+    nav div a:hover {
+        background-color: red;  /***/
+    }
+    
+    nav div a::before {
+        
+/*       if you want to change this*/
+       
+    }
+    
+    nav div a:hover::before {
+    }
     
 </style>
 
