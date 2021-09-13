@@ -75,18 +75,20 @@
     
 /*    ============================*/
     
-/*    STYLE 2 (BUTTON STYLE)==============*/
+/*    STYLE 2 (SEPERATE BUTTON STYLE)==============*/
+    /*
     nav div {
-        gap: 10px;      /***/
+        gap: 10px;     ---
         display: flex;
         align-items: center;
     }
     
     nav div a:link {
         background-color: chocolate;
-        color: white;           /***/
-        font-size: 22px;        /***/
-        box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.75) inset;    /*Change color*/
+        color: white;           ---
+        font-size: 22px;        ---
+        height: 42px;           ---
+        box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.75) inset;    Change color
         padding: 8px;
         border-radius: 5px;
         font-weight: bold;
@@ -96,17 +98,57 @@
     }
     
     nav div a:hover {
-        background-color: red;  /***/
+        background-color: red;  ---
     }
     
     nav div a::before {
         
-/*       if you want to change this*/
+       if you want to change this
        
     }
     
     nav div a:hover::before {
     }
+    */
+    
+/*    STYLE 3 (BUTTON STYLE)==============*/
+    nav div {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav div a:link {
+        background-color: azure;    /***/
+        color: black;           /***/
+        font-size: 22px;        /***/
+        height: 70%;           /***/
+        border-left: 3px solid #fc0b03; /***/
+        padding: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    nav div a:link:nth-child(6) {
+        border-right: 3px solid #fc0b03;
+    }
+    
+    nav div a:hover {
+        background-color: red;  /***/
+    }
+    
+    nav div a::before {
+        
+/*       if you want to add animation to this*/
+       
+    }
+    
+    nav div a:hover::before {
+    }
+    
+/*    ============================*/
     
 </style>
 
